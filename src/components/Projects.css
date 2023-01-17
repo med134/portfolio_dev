@@ -1,0 +1,144 @@
+
+*{
+    background-color:#0A192F;
+}
+.projects {
+    padding: 40px 99px;
+}
+.projects .headline {
+    display: inline-flex;
+}
+.headline h2 {
+    font-size: 28px;
+    color: #ccd6f6;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headline h2::before{
+    content: '03. ';
+    font-size: 29px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #64FFDA;
+}
+.headline h2::after{
+    content: "";
+    display: block;
+    width: 700px;
+    opacity: 50%;
+    height: 1.3px;
+    background-color: #ccd6f6;
+    margin-left: 40%;
+    margin-top: -9px;
+    position: relative;
+}
+.cards_projects {
+    margin-top: 3%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+   
+}
+.email-section {
+    float: right;
+}
+.myCard {
+    width: 350px;
+    height: 350px;
+    margin-top: 3%;
+    border: 2px solid #64FFDA;
+    box-shadow: 6px 6px 2px #64FFDA;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    background-color:#0A192F;
+}
+.myCard:hover {
+  transform:translate3d(5px, 5px, 5px);
+}
+#folder {
+    font-size: 29px ;
+    color: #64FFDA;
+}
+.icons_external {
+    float: right;
+    padding: 10px;
+}
+.icons_external a {
+    font-size: 20px;
+    color: white;
+    transition: 0.4s ease;
+    opacity: 80%;
+    transition: 0.4s ease;
+    margin-left: 5px;
+}
+.myCard h3 {
+    padding: 25px;
+    color: #ccd6f6;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+.myCard p {
+   color: #ccd6f6;
+   font-family: 'Signika', sans-serif;
+   padding: 20px;
+ 
+}
+.myCard span {
+    color: #ccd6f6;
+    font-size: 18px;
+    font-weight: 500;
+}
+.icons_external a:hover {
+    color: #64FFDA;
+}
+ /* mobile screen */
+ @media screen and (max-width :415px){
+    .projects{
+        width: 100%;
+        padding: 10px 14px;
+    }
+    .headline h2::after{
+        width: 160px;
+        margin-left: 200px;
+    }
+    .headline h2 {
+        font-size: 20px;
+    }
+    .headline h2::before {
+        font-size: 20px;
+    }
+    .myCard {
+        max-width: 270px;
+        max-height: 290px;
+        margin-bottom: 5%;
+        padding: 2px 10px;
+    }
+  
+ }
+/* tablet screen */
+@media screen and (min-width :416px) and (max-width :767px){
+    .cards_projects{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .myCard {
+        width: 320px;
+        height: 300px;
+        margin-bottom: 3%;
+    }
+    .headline h2::after{
+        width: 340px;
+        margin-left: 80%;
+    }
+    .headline h2::before {
+       font-size: 28px;
+    }
+    .headline h2 {
+        font-size: 30px;
+        margin-left:  -30px;
+        
+    }
+}

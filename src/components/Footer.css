@@ -1,0 +1,31 @@
+.footer {
+    background-color: #0A192F;
+    text-align: center;
+    color:#ccd6f6;
+    padding: 30px;
+    font-family:'Iceland', cursive;
+    font-size: 20px;
+}
+.footer h3 {
+    margin-bottom: 10px;
+}
+.chatWithMe {
+    visibility: hidden;
+}
+@media screen and  (max-width :767px){
+    .chatWithMe a {
+        visibility: visible;
+        color: #ffffff;
+        padding: 10px; 
+        transition: 0.6s ease;
+    }
+    .chatWithMe a:hover {
+        color: #64FFDA;
+    }
+    .footer{
+        padding: 30px;
+    }
+    .chatWithMe {
+        padding: 20px;
+    }
+}

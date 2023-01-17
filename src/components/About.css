@@ -1,0 +1,161 @@
+*{
+    background-color: #0A192F; 
+}
+.aboutMe {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 40px 99px;
+    flex-wrap: wrap; 
+}
+.about_line{
+    display: inline-flex; 
+ }
+.about_line h2 {
+    font-size: 28px;
+    color: #ccd6f6;
+    font-weight: 600;
+    margin-left: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about_line h2::before{
+    content: '02. ';
+    font-size: 29px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #64FFDA;
+}
+.about_line h2::after {
+    content: "";
+    display: block;
+    width: 700px;
+    opacity: 50%;
+    height: 1.4px;
+    background-color: #ccd6f6;
+    margin-left: 30%;
+    margin-top: -9px;
+    position: relative;
+}
+.bio {
+   display: flex;
+   justify-content: center;
+}
+.myPara {
+    max-width: 700px;
+    text-align:start;
+    color: #ccd6f6;
+    padding: 30px 15px;
+    margin: 20px;
+    font-size: 17px;
+}
+.myImage .pic {
+    width: 250px;
+    height:250px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(2, 251, 255, 0.45),
+    rgba(25, 247, 255, 0.45)),url("./images/med.jpg");
+    background-size: 80%;
+    margin-top: 35px;
+    margin-right: 30px;
+    filter: drop-shadow(10px 10px 0px #ccd6f6);
+    transition: all 0.5s ease;
+}
+.pic:hover{
+    background: url("./images/med.jpg");
+    background-size: 80%;
+    filter: drop-shadow(22px 22px 0px #64FFDA);
+ }
+.skills {
+    display: flex;
+    justify-content: space-around;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #ccd6f6;
+    margin-bottom: 5%;
+}
+ ul li {
+   list-style-image: url('./images/arow.png');
+}
+.email-section {
+    float: right;
+    margin-right: 70px;
+}
+
+/* mobile screen */
+@media screen and (max-width:415px){
+    .social-section {
+        display: none;
+    }
+    .email-section {
+        display: none;
+    }
+    .aboutMe {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    #para2 {
+        display: none;
+    }
+    .about_line{
+        margin-left: 10px;
+    }
+    .bio {
+        display: inline-block;
+    }
+    .skills {
+        display: none;
+    }
+    .myImage .pic {
+        width: 200px;
+        height: 200px;
+        margin-left: 10%;
+    }
+    .about_line h2 {
+        font-size: 20px;
+    }
+    .about_line h2::before {
+        font-size: 24px;
+    }
+    .about_line h2::after {
+        width: 160px;
+        margin-left: 95%;
+    }
+    .myPara {
+        padding: 0px;
+    }
+    .myPara p{
+        width: 350px;
+        padding: 0px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+/* tablet screen */
+@media screen and (min-width :415px) and (max-width :767px){
+    
+    .bio {
+        display: inline-block;
+    } 
+    .about_line {
+        margin-bottom: 5%;
+    }
+    .about_line h2::after {
+        width: 290px;
+        margin-left: 75%;
+    }
+    
+    .myPara {
+        font-size: 16px;
+        padding: 5px 4px;
+        margin: 10px;
+        width: 500px;
+    }
+    .myImage .pic {
+        width: 230px;
+        height: 230px;
+        margin-bottom: 30px;
+    }
+    .skills {
+       display: block;
+       
+    }
+
+}
+

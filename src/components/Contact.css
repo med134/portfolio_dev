@@ -1,0 +1,121 @@
+.contact {
+    padding: 5%;
+}
+.contact h2 {
+    font-size: 28px;
+    color: #ccd6f6;
+    font-weight: 600;
+    margin-left: 18px;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.contact h2::before {
+    content: '04. ';
+    font-size: 29px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #64FFDA;
+}
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 650px;
+    opacity: 50%;
+    height: 1px;
+    background-color: #ccd6f6;
+    margin-left: 28%;
+    margin-top: -9px;
+    position: relative;
+}
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+.card {
+    background-color: #112240;
+    margin-top: 4%;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.4s ease;
+    box-shadow: 5px 5px 2px #64FFDA;
+}
+.card:hover .icon {
+    transform:skewY(8deg);
+}
+.card:hover {
+    transform:translate3d(5px, 5px, 5px);
+}
+
+.card .icon {
+    font-size: 50px;
+    padding: 10px;
+    color: #64FFDA;
+}
+.card .info-service{
+    padding: 20px;
+    opacity: 90%;
+    color: #ccd6f6;
+   
+}
+.card .info-service a{
+    text-decoration: none;
+    color: #ccd6f6;
+    font-weight: bold;
+} 
+/* mobile screen */
+@media screen and (max-width :415px){
+    .contact {
+        width:100%
+    }
+    .contact h2 {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .contact h2::before {
+        font-size: 22px;
+    }
+    .contact h2::after {
+        width: 80px;
+        margin-left:70%
+    }
+    .card {
+        width: 250px;
+        height: 180px;
+        margin-bottom: 5%;
+    }
+}
+/* tablet screen */
+@media screen and (min-width :415px) and (max-width :767px){
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact h2::before{
+        font-size: 24px;
+    }
+    .contact h2 {
+        font-size: 24px;
+    }
+    .contact h2::after {
+        max-width: 320px;
+        margin-left: 50%;
+    }
+    .card {
+        max-width: 250px;
+        max-height: 160px;
+    }
+    .card .icon {
+        font-size: 40px;
+        padding: 2px;
+    }
+
+}
+

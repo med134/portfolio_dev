@@ -1,0 +1,65 @@
+
+.container {
+    background-color: #2E3A52;
+    padding-top: 20px;
+}
+.container h1 { 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-weight: 950;
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+}
+.slider {
+    width: 60%;
+    overflow: hidden;
+    margin-left: 20%;
+    border-radius: 20px;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 400px;
+    width: 100%;
+    transition:  0.3s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 10px;
+  
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+#img5:checked ~ .m5 {
+    margin-left: -400%;
+}
+.camelCase img {
+    width: 100%;
+}
